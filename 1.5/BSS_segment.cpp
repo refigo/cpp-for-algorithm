@@ -1,9 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a = 1;
-const int b = 2;
+int a;
+int b = 0;
+const int c = 0;
 int main(){
-	static int c = 3;
+	static int d;
+	static int e = 0;
 	return 0;
 }
-

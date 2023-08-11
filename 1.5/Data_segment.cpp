@@ -6,4 +6,3 @@ int main(){
 	static int c = 3;
 	return 0;
 }
-
