@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+int a, b;
+double c;
+int main(){
+	scanf("%d.%d", &a, &b);
+	printf("\n%d %d\n", a, b);
+
+	scanf("%lf", &c);
+	printf("%lf\n", c);
+	return 0;
+}
