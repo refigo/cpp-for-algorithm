@@ -2,13 +2,14 @@
 using namespace std;
 struct Point{
 	int y, x;
-};
-struct cmp{
-	bool operator()(Point a, Point b){
-		return a.x < b.x;
+	Point(int y, int x) : y(y), x(x){}
+	Point(){y = -1; x = -1; }
+	bool operator < (const Point & a) const {
+		return x > a.x;
 	}
 };
-priority_queue<Point, vector<Point>, cmp> pq;
+
+priority_queue<Point> pq;
 int main(){
 	pq.push({1, 1});
 	pq.push({2, 2});
