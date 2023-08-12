@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
-vector<vector<int>> v;
-vector<vector<int>> v2(10, vector<int>(10, 0));
-vector<int> v3[10];
+unordered_map<string, int> umap;
 int main(){
-	for(int i = 0; i < 10; i++){
-		vector<int> temp;
-		v.push_back(temp);
+
+	umap["bcd"] = 1;
+	umap["aaa"] = 1;
+	umap["aba"] = 1;
+	for(auto it : umap){
+		cout << it.first << " : " << it.second << '\n';
 	}
 	return 0;
 }
